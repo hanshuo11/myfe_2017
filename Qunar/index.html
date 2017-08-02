@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>校招首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+<div id="app">
+    <div class="background">
+        <div class="logoBox">
+            <a href="#"><img class="QunarLogo" src="http://s.qunarzz.com/hr/beisen/logo.png" alt="QunarLogo"></a>
+        </div>
+        <img class="QunarTitle" src="http://s.qunarzz.com/hr/beisen/title.png" alt="QunarTitle">
+        <img class="QunarTitle2" src="http://s.qunarzz.com/hr/beisen/2018.png" alt="QunarTitle">
+        <img class="QunarPeople" src="http://s.qunarzz.com/hr/beisen/people_03.png" alt="QunarPeople">
+        <div class="QunarSun"></div>
+        <img class="QunarLine" src="http://s.qunarzz.com/hr/beisen/line.png" alt="QunarLine">
+        <!-- <img class="QunarPoint" src="http://s.qunarzz.com/hr/beisen/point.png" alt="QunarLine"> -->
+        <img class="QunarFly01 fly" src="http://s.qunarzz.com/hr/beisen/fly_03.png" alt="fly01">
+        <img class="QunarFly02 fly" src="http://s.qunarzz.com/hr/beisen/fly_06.png" alt="fly02">
+        <img class="QunarFly03 fly" src="http://s.qunarzz.com/hr/beisen/fly_09.png" alt="fly03">
+        <img class="QunarFly04 fly" src="http://s.qunarzz.com/hr/beisen/fly_13.png" alt="fly04">
+        <img class="QunarFly05 fly" src="http://s.qunarzz.com/hr/beisen/fly_17.png" alt="fly05">
+        <img class="QunarFly06 fly" src="http://s.qunarzz.com/hr/beisen/fly_19.png" alt="fly06">
+        <img class="QunarFly07 fly" src="http://s.qunarzz.com/hr/beisen/fly_23.png" alt="fly07">
+        <img class="QunarFly08 fly" src="http://s.qunarzz.com/hr/beisen/fly_26.png" alt="fly08">
+        <img class="QunarFly09 fly" src="http://s.qunarzz.com/hr/beisen/fly_29.png" alt="fly09">
+        <img class="QunarFly10 fly" src="http://s.qunarzz.com/hr/beisen/fly_33.png" alt="fly10">
+        <img class="QunarFly11 fly" src="http://s.qunarzz.com/hr/beisen/fly_36.png" alt="fly11">
+        <img class="QunarFly12 fly" src="http://s.qunarzz.com/hr/beisen/fly_40.png" alt="fly12">
+        <img class="QunarFly13 fly" src="http://s.qunarzz.com/hr/beisen/fly_44.png" alt="fly13">
+        <img class="QunarFly14 fly" src="http://s.qunarzz.com/hr/beisen/fly_48.png" alt="fly14">
+        <div class="origin"></div>
+    </div>
+</div>
+<script src="//common.qunarzz.com/lib/prd/vue/2.3.4/vue.min.js" charset="utf-8"></script>
+<script src="//common.qunarzz.com/lib/prd/element-ui/1.3.7/index.js" charset="utf-8"></script>
+<script src="//qunarzz.com/campus-201707/prd/scripts/home/index@version.js" charset="utf-8"></script>
+<script src="//common.qunarzz.com/lib/prd/jquery/3.2.1/jquery.js"></script>
+<script>
+    $(function() {
+        let origin = $(".origin").offset();
+        move(".QunarPeople", 16, 12);
+        move(".QunarSun", 18, 18);
+        move(".QunarLine", 50, 20);
+        move(".QunarFly01", 20, 20);
+        move(".QunarFly02", 20, 20);
+        move(".QunarFly03", 20, 20);
+        move(".QunarFly04", 20, 20);
+        move(".QunarFly05", 20, 20);
+        move(".QunarFly06", 20, 20);
+        move(".QunarFly07", 20, 20);
+        move(".QunarFly08", 20, 20);
+        move(".QunarFly09", 20, 20);
+        move(".QunarFly10", 20, 20);
+        move(".QunarFly11", 20, 20);
+        move(".QunarFly12", 20, 20);
+        move(".QunarFly13", 20, 20);
+        move(".QunarFly14", 20, 20);
+
+        function move(ele, speed1, speed2) {
+            let sign = $(ele).offset();
+            $("body").on("mousemove", function(e) {
+                let left_distance = origin.left - e.pageX;
+                let top_distance = origin.top - e.pageY;
+
+                if (left_distance > 0 || top_distance > 0) {
+                    $(ele).css({
+                        "left": (sign.left + left_distance / (speed1 ? speed1 : 40)),
+                        "top": (sign.top + top_distance / (speed2 ? speed2 : 40))
+                    })
+                } else if (left_distance < 0 || top_distance < 0) {
+                    $(ele).css({
+                        "left": (sign.left + left_distance / (speed1 ? speed1 : 40)),
+                        "top": (sign.top + top_distance / (speed2 ? speed2 : 40))
+                    })
+                }
+            })
+        };
+    });
+</script>
+</body>
+
+</html>
