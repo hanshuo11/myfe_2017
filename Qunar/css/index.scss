@@ -1,0 +1,232 @@
+.background
+{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 1;
+  background: url(http://s.qunarzz.com/hr/beisen/indexBg.png) no-repeat;
+  background-size: 100% 130%;
+  .logoBox .QunarLogo
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 725px;
+    left: 75px;
+
+    width: 180px;
+  }
+  .QunarTitle
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 240px;
+    left: 30px;
+
+    width: 420px;
+  }
+  .QunarTitle2
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    left: 50px;
+
+    width: 300px;
+  }
+  .QunarPeople
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 128px;
+    left: 452px;
+
+    width: 700px;
+
+    transition: all 1.5s ease;
+
+    opacity: .9;
+  }
+  .QunarSun
+  {
+    position: absolute;
+    z-index: 4;
+    bottom: 500px;
+    left: 700px;
+
+    width: 150px;
+    height: 150px;
+
+    transition: all 1.5s ease-out;
+
+    opacity: .5;
+    border-radius: 50%;
+    background-image: radial-gradient(circle farthest-side at 50px 50px, #fbfdff 3%, #fffdf6 50%, #fff 100%);
+  }
+  .QunarLine
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: -30px;
+    left: 600px;
+
+    height: 415px;
+    transition: all 1.5s ease-out;
+  }
+  .QunarPoint
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 555px;
+
+    width: 890px;
+    height: 660px;
+
+    transition: all .3s ease-out;
+  }
+  .QunarFly01
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 620px;
+    left: 1200px;
+
+    width: 90px;
+  }
+  .QunarFly02
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 630px;
+    left: 950px;
+
+    width: 50px;
+  }
+  .QunarFly03
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 590px;
+    left: 900px;
+
+    width: 60px;
+  }
+  .QunarFly04
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 550px;
+    left: 580px;
+
+    width: 50px;
+  }
+
+  .QunarFly05
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 395px;
+    left: 935px;
+
+    width: 60px;
+  }
+  .QunarFly06
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 380px;
+    left: 1100px;
+
+    width: 55px;
+  }
+  .QunarFly07
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 336px;
+    left: 1051px;
+
+    width: 40px;
+  }
+  .QunarFly08
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 318px;
+    left: 854px;
+
+    width: 50px;
+  }
+  .QunarFly09
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 295px;
+    left: 1038px;
+
+    width: 35px;
+  }
+  .QunarFly10
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 278px;
+    left: 410px;
+
+    width: 35px;
+  }
+  .QunarFly11
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 255px;
+    left: 1080px;
+
+    width: 40px;
+  }
+  .QunarFly12
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 190px;
+    left: 578px;
+
+    width: 50px;
+  }
+  .QunarFly13
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 210px;
+    left: 1240px;
+
+    width: 50px;
+  }
+  .QunarFly14
+  {
+    position: absolute;
+    z-index: 3;
+    bottom: 155px;
+    left: 855px;
+
+    width: 55px;
+  }
+  .origin
+  {
+    width: 5px;
+    height: 5px;
+    margin: 0 auto;
+    margin-top: 28%;
+
+    opacity: 0;
+  }
+  .fly
+  {
+
+    transition: all 1.5s ease-out;
+  }
+}
