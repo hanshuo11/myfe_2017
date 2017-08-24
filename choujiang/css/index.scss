@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1030px) {
+  html {
+    font-size: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  html {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  html {
+    font-size: 5px !important;
+  }
+}
+
+.containter {
+  width: 100%;
+  height: 100%;
+
+  background: #ff5567;
+  .notMe {
+    width: 100%;
+    height: 1200px;
+
+    background: #ff5567;
+  }
+  .stripBox {
+    width: 100%;
+
+    text-align: center;
+    .strip {
+      width: 80%;
+    }
+  }
+  .privilegeBox {
+    width: 100%;
+    margin-top: 10px;
+
+    text-align: center;
+    .privilege {
+      width: 92%;
+    }
+  }
+  .titleBox {
+    width: 100%;
+    padding: 20px 0;
+
+    text-align: center;
+    .title {
+      width: 80%;
+    }
+  }
+  .activityBox {
+    width: 100%;
+    padding-bottom: 30px;
+
+    text-align: center;
+    a {
+      display: inline;
+
+      text-decoration: none;
+      .activity {
+        width: 46%;
+      }
+    }
+  }
+  .tabBox {
+    width: 100%;
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    .tab {
+      position: relative;
+
+      text-align: center;
+      .tabHeader {
+        z-index: 10;
+        .title {
+          position: relative;
+
+          display: inline-block;
+
+          width: 30%;
+          height: 0;
+          padding-top: 2%;
+          padding-bottom: 8%;
+
+          text-align: center;
+
+          color: #fff;
+          border-radius: 10px 10px 0 0;
+          background: #d6292b;
+        }
+        .active {
+          z-index: 100;
+
+          padding-top: 2%;
+          padding-bottom: 10%;
+
+          color: #7f480f;
+          background: url(http://s.qunarzz.com/big_activity/choujiang/xuanzhong.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .tabBody {
+        z-index: 10;
+
+        width: 100%;
+        :nth-child(1) {
+          position: relative;
+          top: -7px;
+
+          width: 93%;
+          height: 0;
+          margin: 0 auto;
+          padding-bottom: 100%;
+
+          background: #fffdfe;
+          display: none;
+          border-radius: 0 0 10px 10px;
+        }
+        :nth-child(2) {
+          position: relative;
+          top: -7px;
+
+          width: 93%;
+          height: 0;
+          margin: 0 auto;
+          padding-bottom: 100%;
+
+          background: #fffdfe;
+          display: none;
+          border-radius: 0 0 10px 10px;
+        }
+        :nth-child(3) {
+          position: relative;
+          top: -7px;
+
+          width: 93%;
+          height: 0;
+          margin: 0 auto;
+          padding-bottom: 100%;
+
+          background: #fffdfe;
+          display: none;
+          border-radius: 0 0 10px 10px;
+        }
+        .show {
+          display: block;
+        }
+      }
+    }
+  }
+}
