@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container" style="width: 100px;height: 200px;background: red;">
+    <span>hello</span>
+</div>
+<script>
+    var oContainer=document.getElementById("container");
+    var aSpan=oContainer.getElementsByTagName("span");
+    aSpan[0].onclick=function (){
+        alert(this.innerHTML);
+    }
+
+</script>
+</body>
+</html>
