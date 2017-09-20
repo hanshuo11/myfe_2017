@@ -4,7 +4,7 @@ function zcggStr(a, b) {
     var str=[];
     var newStr=[];
     var index = 1;
-    var array = new Array(a.length > b.length ? b.length : a.length);
+    var array = new Array(a.length < b.length ? b.length : a.length);
     for (var i = 0; i < array.length; i++) {
         array[i] = new Array(array.length);
         for (var j = 0; j < array.length; j++) {
@@ -18,15 +18,15 @@ function zcggStr(a, b) {
             }
         }
     }
-    str=str.join("");
-    for(var u=0;u<str.length;u++){
-        if(newStr.indexOf(str[u])<0){
-            newStr.push(str[u]);
-        }
-    }
+    // str=str.join("");
+    // for(var u=0;u<str.length;u++){
+    //     if(newStr.indexOf(str[u])<0){
+    //         newStr.push(str[u]);
+    //     }
+    // }
     obj.num=index;
     obj.str=newStr.join("");
-    return obj;
+    return array;
 }
 
-console.log(zcggStr('saytwe', 'iopuyt'));
+console.log(zcggStr('BCADBCD', 'ACBABDCD'));
